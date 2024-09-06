@@ -28,7 +28,7 @@ int main()
                 //newton method new_guess is equal to this.
                 new_guess = guess-(f(guess, in_root)/derivative(guess));
 
-                //gcreates the gap value.
+                //creates the gap value.
                 gap = new_guess - guess;
 
                 //sets x equal to xn+1 to prepare for continuing for loop.
