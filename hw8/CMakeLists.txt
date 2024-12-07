@@ -1,7 +1,7 @@
 cmake_minimum_required( VERSION 3.20 )
 project( pascal VERSION 1.0 )
 
-message( "Using sources: newton.cpp" )
+message( "Using sources: 2pascaltriangle.cpp" )
 add_executable( pascal )
 target_sources( pascal PRIVATE 2pascaltriangle.cpp )
 
