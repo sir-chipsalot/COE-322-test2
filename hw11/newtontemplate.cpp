@@ -33,7 +33,7 @@ T newton_root(function<T(T)> f, function<T(T)> deriv) {
 
 int main() {
   
-  // Example with double
+  // Example wih regular double
   double n_double;
   cout << "Type the number you want to find the root of: \n";
   std::cin >> n_double;
@@ -43,7 +43,7 @@ int main() {
             [](double x) { return 2 * x; })
        << '\n';
 
-  // Example with complex<double>
+  //complex<double>
   double real, imag;
   cout << "Enter the real part of the complex number: ";
   cin >> real;
@@ -51,7 +51,7 @@ int main() {
   cin >> imag;
 
 
-  // run the code with imaginary numbers, a real and complex part
+  // runs the code with imaginary numbers, a real and complex part
   complex<double> n_complex(real, imag);
   cout << "Sqrt of " << n_complex << ": "
        << newton_root<complex<double>>(
